@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head id="headPage">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1024, initial-scale=1.0" />
+        <title>Kaloka Nih Boss - HTML</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css" />
+    </head>
+    <body id="mainPage">
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example ">
+            <div class="container">
+                <a class="navbar-brand fw-bold header" href="../../index.html">Kaloka Nih Boss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../code.html">Tutorial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Download</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Saya</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hubungi</a></li>
+                                <li><a class="dropdown-item" href="#">Tentang</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="tutorial" class="mb-4 text-white d-flex justify-content-center">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold">Hyperlink</h1>
+                <p>Untuk membuat hyperlink atau yang sering disebut link kita hanya perlu tag a saja. Tag a adalah singkatan dari <i>anchor</i></p>
+                <p>Agar lebih jelas cara menuliskan tag a ini mari kita lihat kodenya.</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <a href=""></a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Jika kalian menemukan sebuah tag dengan spasi lalu ada sebuah tag lagi, itu adalah <i>Attribute</i>. Kita katakan saja <i>Attribute</i> tadi itu atribut saja. Untuk memperjelasnya mari kita lihat kodenya lagi.</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp
+>
+                        href=""
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Nah <i>href</i> tadi juga disebut atribut.</p>
+                <p>
+                    Fungsi atribut href adalah untuk menyalakan suatu link. Di dalam href kita bisa menuliskan <i>External link</i> dan <i>Internal link</i>.<i>External link</i> adalah jenis href yang mengarahkan kita ke website. Sementara
+                    <i>Internal link</i> adalah jenis href yang mengarahkan kita dari satu file ke file lain.
+                </p>
+                <p>Kita masuk ke contoh <i>External link</i>nya dulu.</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <!-- Contoh External Link -->
+                        <a href="https://www.youtube.com/">Masuk ke youtube.</a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Hasil :</p>
+                <a href="https://www.youtube.com/">Masuk ke youtube.</a>
+                <br /><br />
+                <p>Lanjut masuk ke contoh <i>Internal link</i>nya.</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <!-- Contoh Internal Link -->
+                        <a href="3.html">Kembali ke materi sebelumnya</a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Hasil :</p>
+                <a href="3.html">Kembali ke materi sebelumnya</a>
+                <br /><br /><br /><br />
+                <p>Tag a juga bisa diberi atribut yaitu, <i>target</i>. Target dibedakan menjadi 4 yaitu :</p>
+                <ul>
+                    <li>_blank</li>
+                    <li>_self</li>
+                    <li><b>_top</b></li>
+                    <li><b>_parent</b></li>
+                </ul>
+                <p>Untuk _top dan _parent tidak akan kita bahas karena _top dan _parent berhubungan dengan frame, sementara kita belum belajar mengenai frame.</p>
+                <p>
+                    Kita bahas _blank dan _self dulu. Default nya jika tidak diberi atribut target adalah _self. Langsung saja kita bahas. _self untuk membuka link di tab yang sedang kalian gunakan. Sementara _blank untuk membuka link di
+                    tab baru.
+                </p>
+                <p>Contoh _blank dan _self</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <!-- Contoh _blank -->
+                        <a href="https://www.youtube.com/" target="_blank">Masuk ke youtube.</a>
+
+                        <!-- Contoh _self -->
+                        <a href="https://www.youtube.com/" target="_self">Masuk ke youtube.</a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <h2>_blank</h2>
+                <p>Hasil :</p>
+                <a href="https://www.youtube.com/" target="_blank">Masuk ke youtube.</a>
+                <br /><br />
+                <h2>_self</h2>
+                <p>Hasil :</p>
+                <a href="https://www.google.com/" target="_self">Masuk ke Google.</a>
+                <br /><br />
+                <p>Nah untuk Internal link kan kalian mengambil filenya di folder yang sama dengan file kalian. Tapi gimana kalau file kalian ada di folder berbeda.</p>
+                <p>Akan aku beri contoh jika file yang akan kalian tuju ada di file yang berbeda :</p>
+                <div class="code-land">
+                    <xmp>
+                        <a href="nama_folder_kalian/nama_file_kalian.html">Masuk ke latihan 2</a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Hasilnya :</p>
+                <a href="2.html">Masuk ke latihan 2</a>
+                <br /><br />
+                <p>
+                    Untuk tanda "/" di kode yang aku kasih tadi itu namanya <i>slash</i>. Tanda slash ini berfungsi untuk mencari file didalam suatu folder. Tapi jika file yang akan kalian tuju ada diatas folder kalian gimana cara untuk
+                    menuju ke filenya. Caranya gampang, kalian hanya harus menambahkan "../". Mari kita lihat kodenya :
+                </p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <a href="../1.html">Kembali ke latihan 1</a>
+                    </xmp>
+                </div>
+                <br /><br />
+                <a href="1.html">Kembali ke latihan 1</a>
+                <br /><br />
+                <div id="next-or-back" class="d-flex justify-content-between">
+                    <a href="3.html">
+                        <button type="button" class="btn btn-secondary">Back</button>
+                    </a>
+                    <a href="5.html">
+                        <button type="button" class="btn btn-secondary">Next</button>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar" style="width: 280px">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+                    <span class="fs-4">List materi</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="0.html" class="nav-link text-white" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home" /></svg>
+                            Pendahuluan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="1.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+                            Paragraf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="2.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Heading
+                        </a>
+                    </li>
+                    <li>
+                        <a href="3.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
+                            List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4.html" class="nav-link active">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Hyperlink
+                        </a>
+                    </li>
+                    <li>
+                        <a href="5.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Image
+                        </a>
+                    </li>
+                    <li>
+                        <a href="6.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Table
+                        </a>
+                    </li>
+                    <li>
+                        <a href="7.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Form
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br />
+        <footer id="footer" class="p-4 text-light">
+            <div id="copyright" class="container">
+                <h4 class="d-flex jusitify-content-center align-items-center">&copy; 2022. Kaloka.</h4>
+            </div>
+        </footer>
+
+        <script src="../../js/bootstrap.bundle.js"></script>
+        <script src="../../js/script.js"></script>
+    </body>
+</html>

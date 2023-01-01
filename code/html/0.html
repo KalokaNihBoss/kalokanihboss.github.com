@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head id="headPage">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1024, initial-scale=1.0" />
+        <title>Kaloka Nih Boss - HTML</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css" />
+    </head>
+    <body id="mainPage">
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example ">
+            <div class="container">
+                <a class="navbar-brand fw-bold header" href="../../index.html">Kaloka Nih Boss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../code.html">Tutorial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Download</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Saya</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hubungi</a></li>
+                                <li><a class="dropdown-item" href="#">Tentang</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="tutorial" class="mb-4 text-white d-flex justify-content-center">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold">Pendahuluan</h1>
+                <p>
+                    HTML adalah singkatan dari <i>Hypertext Markup Language</i>. HTML adalah bahasa <i>Markup</i>, bukan bahasa pemrograman. HTML ini pertama kali diciptakan oleh orang bernama<br />"Tim Berners-Lee". Orang ini juga adalah
+                    orang yang pertama kali menemukan :<br />
+                    - HTTP<br />
+                    - HTML <br />
+                    - WWW <br />
+                    <br />
+                    Orang ini juga adalah orang yang pertama kali menciptakan : <br />
+                    - Web Browser pertama
+                    <br />
+                    - Web Server pertama
+                    <br />
+                    - Web Page pertama
+                </p>
+
+                <p>Orang ini juga menjadi direktur dari sebuah organisasi atau konsorsium bernama W3C atau <i>World Wide Web Consortium</i>.</p>
+                <img src="../../img/tutorial/HTML/w3c.png" class="rounded-5" alt="logo_organisasi_w3c" />
+                <br /><br />
+                <p>Jika kalian sudah membaca artikel tadi sekarang persiapkan bahan untuk membuat websitenya :</p>
+                <ul>
+                    <li>PC / Laptop * sedikit kuat</li>
+                    <li>Kode Editor * terserah</li>
+                    <li>Web Browser * terserah</li>
+                </ul>
+                <p>Untuk kode editor aku pakai Visual Studio Code</p>
+                <p>Kalo web browser yang aku pakai adalah Chrome</p>
+                <p>
+                    Sebelum masuk materi ada satu hal yang akan aku bahas yaitu <i>command</i>. Command atau sering disebut komentar adalah suatu baris kode yang anya bisa dibaca di file secara langsung. Komentar ini tidak akan muncul di
+                    website. Lalu apa fungsi komentar?. Fungsinya untuk mengingat suatu baris kode. Jadi jika kamu punya website yang sudah lama tidak dilanjutkan kamu masih ingat baris dari suatu kode itu fungsinya untuk apa. Untuk
+                    memperjelasnya kita lihat kodenya saja :
+                </p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <!-- Ini adalah komentar -->
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Hasil :</p>
+                <br /><br />
+                <p>Hasilnya adalah kosong karena seperti pada pengertiannya, komentar tidak akan muncul di website.</p>
+                <br /><br />
+                <div id="next-or-back" class="d-flex justify-content-between">
+                    <a href="0.html">
+                        <button type="button" class="btn btn-secondary">Back</button>
+                    </a>
+                    <a href="1.html">
+                        <button type="button" class="btn btn-secondary">Next</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar" style="width: 280px">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+                    <span class="fs-4">List materi</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="0.html" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home" /></svg>
+                            Pendahuluan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="1.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+                            Paragraf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="2.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Heading
+                        </a>
+                    </li>
+                    <li>
+                        <a href="3.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
+                            List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Hyperlink
+                        </a>
+                    </li>
+                    <li>
+                        <a href="5.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Image
+                        </a>
+                    </li>
+                    <li>
+                        <a href="6.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Table
+                        </a>
+                    </li>
+                    <li>
+                        <a href="7.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Form
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br />
+        <footer id="footer" class="p-4 text-light">
+            <div id="copyright" class="container">
+                <h4 class="d-flex jusitify-content-center align-items-center">&copy; 2022. Kaloka.</h4>
+            </div>
+        </footer>
+
+        <script src="../../js/bootstrap.bundle.js"></script>
+        <script src="../../js/script.js"></script>
+    </body>
+</html>

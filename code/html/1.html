@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head id="headPage">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1024, initial-scale=1.0" />
+        <title>Kaloka Nih Boss - HTML</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css" />
+    </head>
+    <body id="mainPage">
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example ">
+            <div class="container">
+                <a class="navbar-brand fw-bold header" href="../../index.html">Kaloka Nih Boss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../code.html">Tutorial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Download</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Saya</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Hubungi</a></li>
+                                <li><a class="dropdown-item" href="#">Tentang</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="tutorial" class="mb-4 text-white d-flex justify-content-center">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold">Paragraf</h1>
+                <p>Untuk membuat paragraf kalian hanya memerlukan tag "p".</p>
+                <p>Agar lebih jelas cara menuliskan tag "p" ini mari kita lihat kodenya.</p>
+                <br /><br />
+                <div class="code-land">
+                    <xmp>
+                        <p>Ini adalah paragraf</p>
+                    </xmp>
+                </div>
+                <br /><br />
+                <p>Hasil :</p>
+                <p>Ini adalah paragraf</p>
+                <br /><br />
+                <div id="next-or-back" class="d-flex justify-content-between">
+                    <a href="0.html">
+                        <button type="button" class="btn btn-secondary">Back</button>
+                    </a>
+                    <a href="2.html">
+                        <button type="button" class="btn btn-secondary">Next</button>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar" style="width: 280px">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+                    <span class="fs-4">List materi</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="0.html" class="nav-link text-white" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home" /></svg>
+                            Pendahuluan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="1.html" class="nav-link active">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+                            Paragraf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="2.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Heading
+                        </a>
+                    </li>
+                    <li>
+                        <a href="3.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle" /></svg>
+                            List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="4.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Hyperlink
+                        </a>
+                    </li>
+                    <li>
+                        <a href="5.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Image
+                        </a>
+                    </li>
+                    <li>
+                        <a href="6.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Table
+                        </a>
+                    </li>
+                    <li>
+                        <a href="7.html" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid" /></svg>
+                            Form
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br />
+        <footer id="footer" class="p-4 text-light">
+            <div id="copyright" class="container">
+                <h4 class="d-flex jusitify-content-center align-items-center">&copy; 2022. Kaloka.</h4>
+            </div>
+        </footer>
+
+        <script src="../../js/bootstrap.bundle.js"></script>
+        <script src="../../js/script.js"></script>
+    </body>
+</html>
