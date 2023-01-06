@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=1024, initial-scale=1.0" />
         <title>Kaloka Nih Boss - Beranda</title>
         <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Bootstrap ver 5.2 -->
+        <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
+
+        <!-- Bootstrap ver 5.3 -->
         <link rel="stylesheet" href="./css/bootstrap.css" />
     </head>
     <body id="mainPage">
@@ -39,39 +44,37 @@
             </div>
         </nav>
 
-        <div class="mb-4 jumbotron text-white d-flex flex-column justify-content-center">
-            <div class="container py-5">
-                <h1 class="display-5 fw-bold">Kaloka Nih Boss</h1>
-                <p class="col-md-8 fs-4">Belajar membuat website dengan pembahasan berbahasa indonesia, disini tempatnya.</p>
-            </div>
-        </div>
-
         <div class="text-white d-flex flex-column justify-content-center" id="fitur">
             <div class="container py-5">
-                <div class="row mb-5">
-                    <h1 class="disply-5 fw-bold col">Fitur :</h1>
-                </div>
+                <h1>Hubungi saya</h1>
 
-                <div class="row text-dark">
-                    <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                        <div class="card border-lg bg-light p-5">
-                            <h3>* Gratis *</h3>
-                            <p>Semua pembelajaran disini gratis. Kalian tidak perlu mengeluarkan uang sama sekali.</p>
-                        </div>
+                <br /><br /><br /><br /><br />
+
+                <form name="submit-to-google-sheet">
+                    <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                        <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                    <div class="col-lg-4 col-sm-12 col-md-12 mb-5">
-                        <div class="card border-lg bg-light p-5">
-                            <h3>* Berbahasa Indonesia *</h3>
-                            <p>Jika kamu tidak bisa bahasa inggris tapi ingin belajar mengoding, belajar saja disini. Semuanya berbahasa Indonesia.</p>
-                        </div>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input name="nama" type="text" class="form-control" id="nama" placeholder="Nama" />
                     </div>
-                    <div class="col-lg-4 col-sm-12 col-md-12">
-                        <div class="card border-lg bg-light p-5">
-                            <h3>* Memberikan Source Code *</h3>
-                            <p>Kalo biasanya kamu ngoding harus ngetik dari nol, disini kamu bisa langsung mendownload source codenya. Jadi kamu mendapatkan komponen website tanpa harus mengoding.</p>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" />
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                        <textarea name="pesan" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-dark px-3" id="submitContact">Kirim</button>
+                        <button class="btn btn-dark d-none" type="button" id="submitContactLoading" disabled>
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         <br />
@@ -83,5 +86,6 @@
 
         <script src="./js/bootstrap.bundle.js"></script>
         <script src="./js/script.js"></script>
+        <script src="./js/contact.js"></script>
     </body>
 </html>
