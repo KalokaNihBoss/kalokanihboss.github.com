@@ -42,7 +42,12 @@ h6,
 /* style */
 
 /* navbar */
-/* - Kosong */
+#homeLink {
+    z-index: 4;
+}
+#homeLink .homeLinkAnimation {
+    transition: all ease-in 0.3s;
+}
 
 /* jumbotron */
 div.jumbotron {
@@ -68,6 +73,12 @@ div.jumbotron {
 /* sidebars */
 .sidebar {
     border-radius: 1rem;
+}
+
+/* about */
+#about {
+        height: 467px;
+    background-color: var(--bs-gray-800);
 }
 
 /* footer */
